@@ -8,6 +8,7 @@ flask = "*"
 pynamodb = "*"
 flask-script = "*"
 python-dotenv = "*"
+flask-login = "*"
 
 [dev-packages]
 

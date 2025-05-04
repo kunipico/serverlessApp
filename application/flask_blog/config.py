@@ -3,3 +3,7 @@ DYNAMODB_REGION = 'ap-northeast-1'
 AWS_ACCESS_KEY_ID = 'aws123456789'
 AWS_SECRET_ACCESS_KEY = 'aws123456789'
 DYNAMODB_ENDPOINT_URL = 'http://localhost:8000'
+
+SECRET_KEY = 'secret key'
+USERNAME = 'john'
+PASSWORD = 'due123'
