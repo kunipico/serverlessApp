@@ -1,2 +1,0 @@
-FLASK_APP=flask_blog:create_app
-FLASK_ENV=development
