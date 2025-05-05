@@ -1,8 +1,10 @@
 from flask import Flask
 from flask_login import LoginManager
+from flask_sessionstore import Session
 
 app = Flask(__name__)
 app.config.from_object('flask_blog.config')
+Session(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -28,10 +30,13 @@ def create_app():
         print("Init DB start !!!")
         """Create DynamoDB table if it doesn't exist."""
         from flask_blog.models.entries import Entry
+        from flask_blog.models.sessions import Session
         if not Entry.exists():
             Entry.create_table(read_capacity_units=5, write_capacity_units=2)
-            print("Table created.")
-        else:
-            print("Table already exists.")
+            print("Entry Table created.")
+        if not Session.exists():
+            Session.create_table(read_capacity_units=5, write_capacity_units=2)
+            print("Session Table created.")
+        
 
     return app
