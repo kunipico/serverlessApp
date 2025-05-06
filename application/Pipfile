@@ -4,11 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
 pynamodb = "*"
 flask-script = "*"
 python-dotenv = "*"
+flask-sessionstore = "*"
+boto3 = "*"
+flask = "<2.3"
 flask-login = "*"
+flask-session = "*"
+mypy-boto3-dynamodb = "*"
 
 [dev-packages]
 
