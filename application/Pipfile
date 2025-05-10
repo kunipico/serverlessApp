@@ -10,9 +10,9 @@ python-dotenv = "*"
 flask-sessionstore = "*"
 boto3 = "*"
 flask = "<2.3"
-flask-login = "*"
 flask-session = "*"
 mypy-boto3-dynamodb = "*"
+flask-login = "*"
 
 [dev-packages]
 
